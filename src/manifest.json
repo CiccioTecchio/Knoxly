@@ -3,7 +3,7 @@
   "name": "Knoxly",
   "description": "Descrizione per la nostra nuova app chrome",
   "version": "0.0.0.2",
-  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "content_security_policy": "script-src 'self' 'sha256-WOdSzz11/3cpqOdrm89LBL2UPwEU9EhbDtMy2OciEhs='",
   "icons": {
     "16": "img/logo16.png"
   },

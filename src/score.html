@@ -10,26 +10,25 @@
         <script src="lib/highcharts.js" defer></script>
         <script src="js/barplot.js" defer></script>
         <script src="js/tbl.js" defer></script>
-        <script src="js/tabManager.js" defer></script>
-        
-
+        <script src="js/tabManager.js" defer></script>  
     </head>
     <body>
       <div style="text-align: center;"><img src="img/banner.png" style="height: 125px;"></div>
-      <table class="table">
+      
+      <table class="tb table">
         <tr>
-          <td> <button id = "analysisTab" class="btn btn-light" style="color: #6da9e8;"> Analysis</button></td>
-          <td> <button id="statTab" class="btn btn-light" style="color: #6da9e8;"> Statistics </button></td>
-          <td> <button id="aboutTab" class="btn btn-light" style="color: #6da9e8;"> About </button> </td>
+          <td> <button id="analysisTab" class="btn_style"> Analysis</button></td>
+          <td> <button id="statTab" class="btn_style"> Statistics </button></td>
+          <td> <button id="aboutTab" class="btn_style"> About </button> </td>
         </tr>
       </table>
 
 
       <div id="contentepage">			
-				<table class="table">
+				<table class="tb table">
                     <thead class="thead-dark">
                       <tr>
-                        <th scope="col" style="text-align: center">Frase</th>
+                        <th scope="col" style="text-align: center">Text</th>
                         <th scope="col" style="text-align: center">Badge</th>
                         <th scope="col" style="text-align: center">Feedback</th>
                       </tr>
@@ -38,7 +37,7 @@
                     </tbody>
                     
                     <tfoot id="tblfoot" style="visibility: hidden;">
-                      <tr><td colspan="3" style="text-align: center"> <button id="clearTbl" class="btn btn-info btn-sm btn-block">Cancella tutto</button>  </td></tr>
+                      <tr><td colspan="3" style="text-align: center"> <button id="clearTbl" class="btn btn-info btn-sm btn-block">Delete All</button>  </td></tr>
                     </tfoot>
                   </table>
             
@@ -47,9 +46,8 @@
 
     </body>
     <footer>
-      <div style="background: yellowgreen; text-align: center; height: 25px;">
-        <a href="https://www.w3schools.com" style="font-size: medium;">Visita W3C</a>
+      <div style="background: #ff8117; text-align: center; height: 25px;">
+        <a href="https://knoxly-website.herokuapp.com" style="font-size: 14px; color:black;">Visite Knoxly Website</a>
     </div>
     </footer>
-    
 </html>

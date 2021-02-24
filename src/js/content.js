@@ -68,8 +68,8 @@ $(document).ready(function(){
     let indITReg = /\b(Borgo|Contrada|Corso|Frazione|Largo|Località|Piazza|Piazzale|Via|Viale|Vicolo|Vicoletto)\s[A-z]{3,}\b/img;
     let indUSAReg = /\b[A-z]{3,}\s(Alley|Avenue|Broadway|Boulevard|Circle|Court|Drive|Garden|Green|Groov|Hill|Island|Park|Plaine|Plaza|Point|Ridge|Road|Square|Street)\b/ig;
     let sindReg = /\b(ÖGB|CGSLB|FGTB|CITUB|PODKREPA|UATUC|CMKOS|ACFTF|LO|EAKL|CFDT|CGT-FO|UIR-CFDT|DGB|GSEE|ICTU|CGIL|CISL|UIL|LPSS|LPSS|LPSK|CGTL|GWU|NSZZ|UGT-P|BNS|CNSLR-FRATIA|CC\.OO|ELA-STV|UGT|AFL-CIO)\b/ig;
-    let sexReg = /\b(Asessuale|Bisessuale|Eterosessuale|Omosessuale|Pansessuale|Heterosexuality|Homosexuality|Bisexuality|Asexuality|Pansexual|Polysexual|Transgender|Gay)\b/ig;
-    let razzeReg = /\b(caucasoide|europide|mongoloide|amerindioide|indianoide|negroide|congoide|capoide|australoide|caucasoid|europid|mongoloid|amerindian|negroid|congoid|capoid|australoid)\b/ig;
+    let sexReg = /\b(Asessuale|Bisessuale|Eterosessuale|Omosessuale|Pansessuale|gay|sexual orientation|montisexual|genderqueer|homo|faggot|queer|homosexual|fags|fag|lesbian|homos|straight|homosexuality|heterosexual|bisexual|queers|dyke|queen|faggots|lesbians|butch|lesbo|bi|dike|metrosexual|hetero|man|sexuality|pansexual|transgender|asexual|bisexuality|bicurious|metrosexuals|ubersexual|feminine|transexual|bisexous|bisexual chic|heterosexuality|omni|pomosexual|giri|hetrosexual|omnisexual|retrosexual|logisexual|bi-sexual|relationship|trisexual|hertosexual|nitro sexual|zoosexual|transsexual|transgendered|tranny|trans|transvestite|shemale|ftm|mtf|androgyne|genderfucked|drag queen|androgynous|gender binary|androgyny|transfag|transgenderqueer|hermaphrodite|ladyboy|femme|transman|female-to-male|pansexuality|pan|agender|enbyfriend|neutrois|no gender|nongender|sexless|cisgendered|cis|cissexual|girlfag|cishet|gender identity|guydyke|transguy|transphobia)\b/ig;
+    let razzeReg = /\b(caucasoide|europide|mongoloide|amerindioide|indianoide|negroide|congoide|capoide|australoide|african-american|black|nigger|white supremacy|nigga|cracker|asian|niggers|negro|coon|nig|african|blacks|african american|wigger|caucasian|crackers|redneck|white trash|white people|white boy|hillbilly|niggas|redneck|white power|asians|chinese|japanese|chink|korean|china|indian|mexican|italian|indians|india|native american|brown|native|hindu|desi|negros|black people|niglet|negroes|negroid|american|africans|africa|afro|african-americans|dago|hick|honky|kike|limey|wog|wop|yid)\b/ig;
     let zipCode = /\b\d{5}\b/g;
     //altri dati
 
@@ -283,7 +283,7 @@ let sep = "."
         let str = text.substring(start, lastSep)
         lastSep++
         start = lastSep
-        if(text.length>5){
+        if(text.length>70){
             $.ajax({
                 type: 'POST',
                 url: URL,
