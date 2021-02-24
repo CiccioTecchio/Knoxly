@@ -5,10 +5,10 @@ function loadBarPlot(){
                 type: 'column'
             },
             title: {
-                text: 'Di cosa parli'
+                text: 'What you talk about'
             },
             xAxis: {
-                categories: ['P', 'H', 'J', 'T', 'G']
+                categories: ['P', 'H', 'J', 'T', 'G', 'Rc', 'Rl', 'S']
             },
             yAxis: {
                 /*title: {
@@ -19,7 +19,7 @@ function loadBarPlot(){
                 enabled: false
             },
             series: [{
-                name: 'Occorrenza',
+                name: 'Occurrence',
                 data: res.occurrence
             }],
         });
@@ -37,7 +37,7 @@ function loadOverall(){
                 type: 'pie' 
             },
             title: {
-                text: 'Pie'
+                text: 'How much is sensitive'
             },
             tooltip:{
                 enabled: false
@@ -66,8 +66,8 @@ function loadOverall(){
 
 function chooseColor(sens){
     let color = ""
-    if (sens>=0.36 && sens <= 0.68) color = "#f1c40f"
-    else if (sens>=0.69 && sens <= 1) color = "#e67e22"
+    if (sens>=0.36 && sens <= 0.65) color = "#f1c40f"
+    else if (sens>0.65 && sens <= 1) color = "#d60000"
     /*if(sens >= 0 && sens <= 0.25) color="#2ecc71"
     else if(sens >= 0.26 && sens <= 0.50) color = "#f1c40f"
     else if(sens >= 0.51 && sens <= 0.75) color = "#e67e22"
